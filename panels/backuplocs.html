@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <style type="text/css">
+      .sidebar-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 48px; /* Height of navbar */
+        height: calc(100vh - 48px);
+        padding-top: .5rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
       .feather {
         width: 20px;
         height: 20px;
@@ -48,7 +57,7 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3 sidebar-sticky">
         <div class="list-group">
           <a href="dashboard.html" class="list-group-item list-group-item-action"><span data-feather="home"></span> Dashboard</a>
           <a href="restoration.html" class="list-group-item list-group-item-action"><span data-feather="rotate-ccw"></span> Restoration</a>
@@ -56,6 +65,9 @@
           <a href="syslogs.html" class="list-group-item list-group-item-action"><span data-feather="bar-chart-2"></span> Logs / Statistics</a>
           <a href="preferences.html" class="list-group-item list-group-item-action"><span data-feather="settings"></span> Preferences</a>
           <a href="about.html" class="list-group-item list-group-item-action"><span data-feather="help-circle"></span> About / Credits</a>
+        </div>
+        <div class="text-center" style="margin-top:1em;">
+          <a href="javascript:void(0);" onclick="launchintopopup();">launch in popup <span data-feather="external-link"></span></a>
         </div>
       </div>
       <div class="col-md-8">
@@ -164,6 +176,13 @@
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script>
       feather.replace()
+    </script>
+
+    <!-- Simple script to launch this webpage into a smaller window (like an electron app size) -->
+    <script>
+    function launchintopopup() {
+        var myWindow = window.open(window.location.href, "MsgWindow", "width=1200,height=600");
+    }
     </script>
 
 
