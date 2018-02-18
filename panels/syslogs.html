@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style type="text/css">
+      .feather {
+        width: 20px;
+        height: 20px;
+        vertical-align: text-bottom;
+      }
+      .container {
+        margin-top: 4em;
+      }
+      h1 {
+        margin-bottom: 1em;
+      }
+      .btn-full {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        white-space: normal;
+      }
+      .card {
+        margin-bottom: 1em;
+      }
+    </style>
+
+  </head>
+  <body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="dashboard.html" class="list-group-item list-group-item-action"><span data-feather="home"></span> Dashboard</a>
+          <a href="restoration.html" class="list-group-item list-group-item-action"><span data-feather="rotate-ccw"></span> Restoration</a>
+          <a href="backuplocs.html" class="list-group-item list-group-item-action"><span data-feather="server"></span> Backup Locations</a>
+          <a href="syslogs.html" class="list-group-item list-group-item-action list-group-item-primary"><span data-feather="bar-chart-2"></span> Logs / Statistics</a>
+          <a href="#" class="list-group-item list-group-item-action"><span data-feather="settings"></span> Preferences</a>
+          <a href="#" class="list-group-item list-group-item-action"><span data-feather="help-circle"></span> About / Credits</a>
+        </div>
+      </div>
+      <div class="col-md-8">
+
+        <!-- PAGE TITLE -->
+        <h1>System Logs</h1>
+
+        <table class="table table-bordered table-hover">
+          <col width="15%">
+          <col width="10%">
+          <col width="5%">
+          <col width="70%">
+          <thead>
+            <tr>
+              <th scope="col" style="text-align:center;vertical-align:middle;">Date</th>
+              <th scope="col" style="text-align:center;vertical-align:middle;">Time</th>
+              <th scope="col" style="text-align:center;vertical-align:middle;">Severity</th>
+              <th scope="col">Message</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-warning">
+              <td style="text-align:center;vertical-align:middle;">Feb 09, 2018</td>
+              <td style="text-align:center;vertical-align:middle;">8:20am EST</td>
+              <td style="text-align:center;vertical-align:middle;">WARN</td>
+              <td>Warning about something that could be wrong, but isn't really that big of an issue that needs to get fixed right now.</td>
+            </tr>
+            <tr>
+              <td style="text-align:center;vertical-align:middle;">Feb 08, 2018</td>
+              <td style="text-align:center;vertical-align:middle;">5:59pm EST</td>
+              <td style="text-align:center;vertical-align:middle;">LOW</td>
+              <td>This is just a normal message, nothing to see here, the system maybe started up after reboot or something.</td>
+            </tr>
+            <tr class="table-danger">
+              <td style="text-align:center;vertical-align:middle;">Feb 08, 2018</td>
+              <td style="text-align:center;vertical-align:middle;">1:25am EST</td>
+              <td style="text-align:center;vertical-align:middle;">HIGH</td>
+              <td>This is an error, the user should be alerted/get an email or something if that is set in their preferences.</td>
+            </tr>
+            <tr>
+              <td style="text-align:center;vertical-align:middle;">Feb 05, 2018</td>
+              <td style="text-align:center;vertical-align:middle;">12:21pm EST</td>
+              <td style="text-align:center;vertical-align:middle;">LOW</td>
+              <td>This is just an info message here where it just has information and nothing more then just information.</td>
+            </tr>
+            <tr>
+              <td style="text-align:center;vertical-align:middle;">Feb 05, 2018</td>
+              <td style="text-align:center;vertical-align:middle;">11:05am EST</td>
+              <td style="text-align:center;vertical-align:middle;">LOW</td>
+              <td>This is just an info message here where it just has information and nothing more then just information.</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
+      </div>
+    </div>
+
+  </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+  </body>
+</html>
