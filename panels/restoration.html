@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style type="text/css">
+      .feather {
+        width: 20px;
+        height: 20px;
+        vertical-align: text-bottom;
+      }
+      .container {
+        margin-top: 4em;
+      }
+      h1 {
+        margin-bottom: 1em;
+      }
+      .btn-full {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        white-space: normal;
+      }
+      .card {
+        margin-bottom: 1em;
+      }
+    </style>
+
+  </head>
+  <body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="dashboard.html" class="list-group-item list-group-item-action"><span data-feather="home"></span> Dashboard</a>
+          <a href="restoration.html" class="list-group-item list-group-item-action list-group-item-primary"><span data-feather="rotate-ccw"></span> Restoration</a>
+          <a href="backuplocs.html" class="list-group-item list-group-item-action"><span data-feather="server"></span> Backup Locations</a>
+          <a href="#" class="list-group-item list-group-item-action"><span data-feather="bar-chart-2"></span> Logs / Statistics</a>
+          <a href="#" class="list-group-item list-group-item-action"><span data-feather="settings"></span> Preferences</a>
+          <a href="#" class="list-group-item list-group-item-action"><span data-feather="help-circle"></span> About / Credits</a>
+        </div>
+      </div>
+      <div class="col-md-8">
+
+        <!-- PAGE TITLE -->
+        <h1>Restoration</h1>
+
+        <!-- BACKUPS WE CAN RESTORE FROM -->
+        <!-- If we have had a successfull backup, then we should be able to restore from it -->
+        <!-- We can select which one we want to restore from here, and if it is running, promt the user to stop it -->
+        <div class="card border-dark">
+            <div class="row no-gutters">
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title">Backup Name #1</h5>
+                  <h6 class="card-subtitle mb-2">Last backup completed at 11:32am on February 10, 2018</h6>
+                </div>
+            </div>
+            <div class="col-md-2">
+              <button type="button" class="btn btn-outline-dark btn-full"><span data-feather="corner-up-right"></span> Restore</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card border-dark">
+            <div class="row no-gutters">
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title">Backup Name #2</h5>
+                  <h6 class="card-subtitle mb-2">Last backup completed at 2:12pm on February 10, 2018</h6>
+                </div>
+            </div>
+            <div class="col-md-2">
+              <button type="button" class="btn btn-outline-dark btn-full"><span data-feather="corner-up-right"></span> Restore</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+            <div class="row no-gutters">
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="card-title text-muted">Backup Name #3</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Backup Never Completed</h6>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+            <div class="row no-gutters">
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="card-title text-muted">Backup Name #4</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Backup Never Completed</h6>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card border-dark">
+            <div class="row no-gutters">
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title">Backup Name #4</h5>
+                  <h6 class="card-subtitle mb-2">Last backup completed at 8:01am on February 8, 2018</h6>
+                </div>
+            </div>
+            <div class="col-md-2">
+              <button type="button" class="btn btn-outline-dark btn-full"><span data-feather="corner-up-right"></span> Restore</button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+  </body>
+</html>

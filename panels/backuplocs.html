@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style type="text/css">
+      .feather {
+        width: 20px;
+        height: 20px;
+        vertical-align: text-bottom;
+      }
+      .container {
+        margin-top: 4em;
+      }
+      h1 {
+        margin-bottom: 1em;
+      }
+      .btn-full {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        white-space: normal;
+      }
+      .card {
+        margin-bottom: 1.5em;
+      }
+      .cardlink {
+        position: absolute;
+        top: 0; left: 0;
+        height: 100%; width: 100%;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0.25rem;
+        z-index: 10;
+      }
+      a.cardlink:hover, a.cardlink:focus, a.cardlink.active {
+        border-color: #007bff;
+      }
+    </style>
+
+  </head>
+  <body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="dashboard.html" class="list-group-item list-group-item-action"><span data-feather="home"></span> Dashboard</a>
+          <a href="restoration.html" class="list-group-item list-group-item-action"><span data-feather="rotate-ccw"></span> Restoration</a>
+          <a href="backuplocs.html" class="list-group-item list-group-item-action list-group-item-primary"><span data-feather="server"></span> Backup Locations</a>
+          <a href="#" class="list-group-item list-group-item-action"><span data-feather="bar-chart-2"></span> Logs / Statistics</a>
+          <a href="#" class="list-group-item list-group-item-action"><span data-feather="settings"></span> Preferences</a>
+          <a href="#" class="list-group-item list-group-item-action"><span data-feather="help-circle"></span> About / Credits</a>
+        </div>
+      </div>
+      <div class="col-md-8">
+
+        <!-- PAGE TITLE -->
+        <h1>Backup Locations</h1>
+
+        <!-- ACTIVE BACKUP LOCATIONS -->
+        <!-- Each card should have the details for a backup location -->
+        <!-- A user can directly edit the backup location properties here -->
+        <div class="card">
+          <div class="card-header">
+            Amazon Cloud Storage #1
+            <div class="float-right">
+              <a href="#" class="edit-fields"><span data-feather="edit"></span></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <!-- FIRST COLUMN -->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="aws-1-region">Region:</label>
+                  <input class="form-control form-control-sm" type="text" id="aws-1-region" value="" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="aws-1-endpoint">Endpoint:</label>
+                  <input class="form-control form-control-sm" type="text" id="aws-1-endpoint" value="amazon.com" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="aws-1-bucket">Bucket:</label>
+                  <input class="form-control form-control-sm" type="text" id="aws-1-bucket" value="" readonly>
+                </div>
+              </div>
+              <!-- SECOND COLUMN -->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="aws-1-directory">Directory:</label>
+                  <input class="form-control form-control-sm" type="text" id="aws-1-directory" value="" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="aws-1-accessid">Access ID:</label>
+                  <input class="form-control form-control-sm" type="text" id="aws-1-accessid" value="keyidname123" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="aws-1-accesskey">Access Key:</label>
+                  <input class="form-control form-control-sm" type="password" id="aws-1-accesskey" value="pasword12345" readonly>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-header">
+            SFTP Local Backup #1
+            <div class="float-right">
+              <a href="#" class="edit-fields"><span data-feather="edit"></span></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="sftp-1-url">Server URL:</label>
+              <input class="form-control form-control-sm" type="text" id="sftp-1-url" value="192.168.1.18" readonly>
+            </div>
+            <div class="form-group">
+              <label for="sftp-1-username">Username:</label>
+              <input class="form-control form-control-sm" type="text" id="sftp-1-username" value="root" readonly>
+            </div>
+            <div class="form-group">
+              <label for="sftp-1-password">Password:</label>
+              <input class="form-control form-control-sm" type="password" id="sftp-1-password" value="pasword12345" readonly>
+            </div>
+          </div>
+        </div>
+
+        <!-- END CARD TO ADD NEW OBJECT -->
+        <div class="card">
+          <a href="#" class="cardlink"></a>
+          <div class="card-body text-center">
+            <div class="row">
+              <div class="col-md-2">
+                <span data-feather="plus" style="height:100%;width:auto;"></span>
+              </div>
+              <div class="col-md-9">
+                <h3>Add New Backup Location</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+
+    <script type="text/javascript">
+      // This is just a hack to toggle the read only on the entire page
+      // We would want to toggle it for just a single backup location, not the whole page
+      // To lazy to do the actual javascript
+      $('.edit-fields').on('click', function() {
+        $('input').prop("readonly", !$('input').is('[readonly]'));;
+      });
+    </script>
+
+  </body>
+</html>
