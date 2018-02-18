@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <style type="text/css">
+      html {
+          overflow: -moz-scrollbars-vertical; /* always show scroll bar */
+          overflow-y: scroll; /* always show scroll bar */
+      }
       .sidebar-sticky {
         position: -webkit-sticky;
         position: sticky;
-        top: 48px; /* Height of navbar */
-        height: calc(100vh - 48px);
-        padding-top: .5rem;
+        top: 4em; /* sticky to top, container is padded 4em */
+        height: calc(100vh - 4em);
         overflow-x: hidden;
         overflow-y: hidden;
       }
